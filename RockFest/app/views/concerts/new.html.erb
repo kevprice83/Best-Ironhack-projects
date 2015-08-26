@@ -1,0 +1,61 @@
+<h5> Organise a concert </h5>
+
+<%= form_for(@concert) do |f| %>
+
+    <ul>
+
+    <li>
+        <%= f.label :band, class: "label label-default" %>
+        <%= f.text_field :band %>
+    </li>
+
+    <br />
+
+    <li>
+        <%= f.label :city, class: "label label-default" %>
+        <%= f.text_field :city %>
+    </li>
+
+    <br />
+
+    <li>
+        <%= f.label :venue, class: "label label-default" %>
+        <%= f.text_field :venue %>
+    </li>
+
+    <br />
+
+    <li>
+        <%= f.label :date, class: "label label-default" %>
+        <%= f.date_field :date %>
+    </li>
+
+    <br />
+
+    <li>
+        <%= f.label :price, class: "label label-default" %>
+        <%= f.number_field :price %>
+    </li>
+
+    <br />
+
+    <li>
+        <%= f.label :description, class: "label label-default" %>
+        <%= f.text_field :description %>
+    </li>
+
+    <br />
+
+    <li>
+        <%= f.label :logo, class: "label label-default" %>
+        <%= f.file_field :logo %>
+    </li>
+
+    <br />
+
+    <li>
+        <%= f.submit "Submit", class: "btn btn-primary" %>
+    </li>
+
+    </ul>
+<% end %>

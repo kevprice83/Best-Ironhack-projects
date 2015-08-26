@@ -1,0 +1,17 @@
+<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="jumbotron card">
+				<div class="container">
+	  <%= image_tag @concert.logo.url(:medium) %>
+	  <p>Band: <%= @concert.band %></p>
+	  <p>City: <%= @concert.city %> </p>
+	  <p>Venue: <%= @concert.venue %> </p>
+	  <p>Date: <%= @concert.date %> </p>
+	  <p>Price <%= @concert.price %> </p>
+	  <p>Description: <%= @concert.description %> </p>
+	  <%= link_to "Edit", edit_concert_path(@concert)  %>
+
+				</div>
+			</div>
+		</div>
+</div>

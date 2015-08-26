@@ -1,0 +1,132 @@
+/*----Navbar top----*/
+
+.nav-bar__top {
+	height: 46px;
+	background: white;
+}
+
+.container {
+	margin: 0;
+}
+
+.button_top {
+	margin-top: 10px;
+	background: white;
+	border-color: white;
+	border-style: solid;
+	box-shadow: 0;
+	color: #66757f;
+}
+
+.buttons:hover {
+	color: #009999 !important;
+	cursor: pointer;
+}
+
+.bird {
+	margin-left: 0px;
+	margin-top: -50px;
+}
+
+/*---Cover pic---*/
+
+.jumbotron {
+  	background: url(https://pbs.twimg.com/profile_banners/1551130856/1399999084/1500x500) no-repeat center center;
+	height: 320px;
+	margin: 0px;
+}
+
+/*---2nd Navbar---*/
+
+.button-link {
+	margin: 10px;
+}
+
+.nav-bar__bottom {
+	margin: 0px;
+	background: white;
+}
+
+.follow:hover {
+	background-color: #be1931 !important;
+}
+
+/*----Main Page----*/
+
+.main-page {
+	background-color: #f5f8fa;
+}
+
+/*---Profile Pic---*/
+
+.prof-pic {
+	border-radius: 8px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	margin-top: -190px; 
+	height: 200px; 
+	width: 200px;
+	box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+}
+
+/*---Left Column---*/
+
+.left_col {
+	margin-left: 50px;
+}
+
+.text_color {
+	color: #686868;
+}
+/*---Central Column---*/
+
+.button__tweet {
+	margin: 10px;
+	color: #009999;
+}
+
+.box {
+	box-sizing: border-box;
+	background: white;
+	margin: 0;
+	padding: 0;
+	box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+}
+
+.media {
+	border-bottom: 1px solid #e1e8ed;
+	background: white;
+	font-size: 14px;
+	position: relative;
+  	min-height: 51px;
+  	padding: 9px 12px;
+  	border-radius: 5px;
+}
+
+.media-object {
+	float: left;
+  	margin-top: 3px;
+  	margin-left: -8px;
+  	width: 48px;
+  	height: 48px;
+  	border-radius: 5px;
+}
+
+/*.box {
+	border-radius: 8px;
+	vertical-align: top;
+	width: 100%;
+	top: 2.5em;
+	box-sizing: border-box;
+	background: white;
+	margin: 0, 0, 0, 0;
+	padding: 5px;
+	box-shadow: 0 1px 1px rgba(136,153,166,0.15);
+}
+
+.box__header {
+	font-size: 1.5em;
+	color: #4A4A4A;
+
+}*/

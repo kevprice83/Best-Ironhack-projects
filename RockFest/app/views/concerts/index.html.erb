@@ -1,0 +1,52 @@
+<div class="jumbotron cover_pic">
+  <div class="container">
+   
+  </div>
+</div>
+
+<div class="row">
+	<div class="col-md-3">
+		<h4><strong>Later this month<strong></h4>
+	</div>
+		<div class="col-md-2 col-md-offset-4">
+			<h2><strong>Live today</strong></h2>
+		</div>
+</div>
+
+
+   
+ <div class="container main_page">
+	<div class="row">
+		<% @this_month.each do |concert| %>
+			<div class="col-md-3">
+				<div class="jumbotron side_bar">
+					
+						<%= image_tag concert.logo.url(:thumb) %>
+						<p>Band: <%= link_to concert.band, concert_path(concert.id) %></p>
+						<p>City: <%= concert.city %> </p>
+						<p>Venue: <%= concert.venue %> </p>
+						<p>Date: <%= concert.date %> </p>
+						<p>Price <%= concert.price %> </p>
+						<p>Description: <%= concert.description %> </p>
+						
+				</div>
+			</div>
+		<% end %>
+
+		<% @concerts.each do |concert| %>
+			<div class="col-md-6 col-md-offset-2">
+				<div class="jumbotron card">
+					
+						<%= image_tag concert.logo.url(:medium) %>
+						<p>Band: <%= link_to concert.band, concert_path(concert.id) %></p>
+						<p>City: <%= concert.city %> </p>
+						<p>Venue: <%= concert.venue %> </p>
+						<p>Date: <%= concert.date %> </p>
+						<p>Price <%= concert.price %> </p>
+						<p>Description: <%= concert.description %> </p>
+					
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
